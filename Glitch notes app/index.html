@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch take notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading">Glitch</h1>
+        <h3 class="title">Sliding Login & Registration Form</h3>
+    </header>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">LogIn</button>
+                <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="46-facebook-512.png">
+                <img src="icon-tweeter-300x300.png">
+                <img src="logo-ig-logo-abundant-instagram-logo-simple-icon-1.png">
+            </div>
+            <form action="" id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="user Id" required>
+                <input type="password" class="input-field" placeholder="input passcode" required>
+                <input type="checkbox" class="chech-box"> <span>remember passcode</span>
+                <button type="submit" class="submit-btn" onclick="mylog()">LogIn</button>
+            </form>
+            <form action="" id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="user Id" required>
+                <input type="email" class="input-field" placeholder="email" required>
+                <input type="password" class="input-field" placeholder="passcode" required>
+                <input type="checkbox" class="chech-box"> <span>i agree to terms and conditions</span>
+                <button type="submit" class="submit-btn" onclick="myreg()">Register</button>
+            </form>
+        </div>
+        
+
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("Register");
+        var z = document.getElementById("btn");
+
+        function Register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function mylog(){
+            window.location.href = "text.html";
+        }
+
+        function myreg(){
+            window.location.href = "text.html";
+        }
+    </script>
+</body>
+</html>
